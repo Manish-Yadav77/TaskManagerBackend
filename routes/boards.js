@@ -1,7 +1,7 @@
 // routes/boards.js
 import express from "express";
 import { getBoards, saveBoards } from "../controllers/boardController.js";
-import authenticateToken from "./middleware/auth.js";
+import authenticateToken from "../middleware/auth.js";
 
 const router = express.Router();
 
