@@ -1,11 +1,11 @@
 // routes/boards.js
 import express from "express";
 import { getBoards, saveBoards } from "../controllers/boardController.js";
-import auth from "../middleware/auth.js";
+import authenticateToken from "./middleware/auth.js";
 
 const router = express.Router();
 
-router.get("/api/boards", auth, getBoards);
-router.post("/api/boards", auth, saveBoards);
+router.get("/api/boards", authenticateToken, getBoards);
+router.post("/api/boards", authenticateToken, saveBoards);
 
 export default router;
