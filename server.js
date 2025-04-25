@@ -9,7 +9,6 @@ import boardRoutes from "./routes/boards.js";
 import dotenv from "dotenv";
 dotenv.config();
 import bcrypt from "bcrypt";
-import upload from "./config/multer.js";
 const app = express();
 connectDB();
 
