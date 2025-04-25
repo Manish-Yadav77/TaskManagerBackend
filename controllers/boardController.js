@@ -3,7 +3,7 @@ import User from '../Models/UserModel.js';
 
 export const getBoards = async (req, res) => {
   try {
-    const user = await User.findById(req.user.id); // assuming auth middleware
+    const user = await User.findById(req.user.id);
 
     if (!user) return res.status(404).json({ msg: "User not found" });
 

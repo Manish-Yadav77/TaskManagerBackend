@@ -1,5 +1,5 @@
-const jwt = require('jsonwebtoken');
-const User = require('../Models/UserModel');
+import jwt from 'jsonwebtoken';
+import User from '../Models/UserModel';
 
 const authMiddleware = async (req, res, next) => {
     const token = req.headers['authorization']?.split(' ')[1];
@@ -30,4 +30,4 @@ const authorizeRole = (role) =>{
     }
 }
 
-module.exports = {authMiddleware,authorizeRole};
+export default {authMiddleware,authorizeRole};

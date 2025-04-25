@@ -21,6 +21,5 @@ const userSchema = new mongoose.Schema({
   },
 },{timestamps:true});
 
-// Export User model using ES Module
 const User = mongoose.model("User", userSchema);
 export default User;

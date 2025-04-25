@@ -1,4 +1,4 @@
-import User from '../Models/User.js';
+import User from '../Models/UserModel';
 
 export const addTask = async (req, res) => {
   const { id, title, description, columnId } = req.body;
