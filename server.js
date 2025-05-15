@@ -14,7 +14,7 @@ connectDB();
 
 app.use(
   cors({
-    origin: ["http://localhost:5173", "https://tasks-managerr.netlify.app"],
+    origin: ["http://localhost:73", "https://tasks-managerr.netlify.app"],
     credentials: true,
   })
 );
